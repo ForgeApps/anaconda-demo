@@ -38,4 +38,5 @@ group :test, :development do
   gem "figaro", '~> 0.7'
 end
 
-gem 'anaconda'
+gem 'anaconda', :path => "/Users/benmcfadden/forge/anaconda"
+#gem 'anaconda'

@@ -1,0 +1,16 @@
+.col.md-10.col-md-offset-1
+  %h1 Anaconda Demo
+  .panel.panel-default
+    .panel-body
+
+      = simple_form_for @post do |f|
+        .form-group
+          = f.label :title
+          = f.text_field :title, class: "form-control ", placeholder: "Upload Title"
+        .form-group
+          = f.label :asset
+          = f.anaconda :asset
+        .form-group
+        = f.submit "Submit", class: "btn btn-primary"
+    .panel-footer
+      %em Files are periodically erased from this demo

@@ -1,0 +1,22 @@
+.col.md-10.col-md-offset-1
+  %h1 Anaconda Demo
+  .panel.panel-default
+    .panel-heading= @post.title
+    .panel-body
+      %dl
+        %dt Filename
+        %dd= @post.asset_filename
+  
+        %dt File Size
+        %dd= number_to_human_size @post.asset_size
+  
+        %dt Type
+        %dd= @post.asset_type
+        
+      = link_to "View in browser", @post.asset_url, class: "btn btn-primary"
+      
+      = link_to "Download", @post.asset_download_url, class: "btn btn-primary"
+    .panel-footer
+      %em Files are periodically erased from this demo
+      
+  = link_to "Upload again!", root_path

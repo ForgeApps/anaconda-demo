@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap";
+
+div.upload-file{
+  font-size: 14px;
+  span.file-name{
+    display: inline-block;
+    padding-right: 10px;
+  }
+  span.size{
+    display: inline-block;
+    font-size: 14px;
+  }
+  span.progress-percent{
+    display: inline-block;
+    text-align: right;
+    float: right;
+  }
+}
