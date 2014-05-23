@@ -38,4 +38,4 @@ group :test, :development do
   gem "figaro", '~> 0.7'
 end
 
-gem 'anaconda', '1.0.4'
+gem 'anaconda', '1.0.5'
